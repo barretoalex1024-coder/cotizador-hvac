@@ -7,12 +7,12 @@ import { Header } from '@/components/layout/Header'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Input, Select } from '@/components/ui/Input'
-import { formatCurrency, formatBTU } from '@/lib/utils'
+import { formatCurrency } from '@/lib/utils'
 import { calculateHVACLoad, estimateCosts } from '@/lib/hvac-calculator'
 import { CLIMATE_ZONES, BUILD_TYPES, type ClimateZoneKey, type BuildTypeKey } from '@/lib/constants'
 import { Thermometer, Zap, DollarSign, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
-import type { EquipmentCatalog, Profile } from '@/types/database'
+import type { EquipmentCatalog } from '@/types/database'
 
 const climateOptions = Object.entries(CLIMATE_ZONES).map(([value, z]) => ({ value, label: z.label }))
 const buildOptions = Object.entries(BUILD_TYPES).map(([value, b]) => ({ value, label: b.label }))

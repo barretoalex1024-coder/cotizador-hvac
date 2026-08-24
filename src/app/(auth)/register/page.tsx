@@ -2,11 +2,9 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 
 export default function RegisterPage() {
-  const router = useRouter()
   const [form, setForm] = useState({ email: '', password: '', confirm: '', company: '' })
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
