@@ -1,0 +1,12 @@
+{
+  "name": "cotizador-hvac",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "omniroute:configurar": "bash scripts/configurar-omniroute.sh",
+    "omniroute:claude": "bash scripts/claude-omniroute.sh"
+  }
+}
