@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "node --test test/*.test.ts",
+    "omniroute:configurar": "bash scripts/configurar-omniroute.sh",
+    "omniroute:claude": "bash scripts/claude-omniroute.sh"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
@@ -30,5 +33,8 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.18"
   }
 }

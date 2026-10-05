@@ -34,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# OmniRoute / Claude Code (credenciales locales)
+.env*
+!.env.example
+.claude/settings.local.json
