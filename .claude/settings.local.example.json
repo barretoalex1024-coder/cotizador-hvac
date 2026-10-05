@@ -1,0 +1,8 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://tu-omniroute.up.railway.app",
+    "ANTHROPIC_AUTH_TOKEN": "<tu API key de OmniRoute>",
+    "ANTHROPIC_MODEL": "bsam-claude-code",
+    "CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY": "1"
+  }
+}
